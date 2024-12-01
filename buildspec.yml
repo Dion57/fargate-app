@@ -22,4 +22,4 @@ phases:
       - echo '[{"name":"fargate-app","imageUri":"'$AWS_ACCOUNT_ID'.dkr.ecr.'$AWS_DEFAULT_REGION'.amazonaws.com/fargate-app:latest"}]' > imagedefinitions.json
   artifacts:
   files:
-    - "**/*"
+    - imagedefinitions.json
